@@ -25,12 +25,6 @@ namespace MauiApp3.Service
             _connection.CreateTable<Proveedor>();
 
             Proveedor proveedors = new Proveedor();
-
-            proveedors.NombreProveedor = "Jesua";
-
-            Insert(proveedors); 
-           
-
         }
 
 
@@ -43,6 +37,11 @@ namespace MauiApp3.Service
         public int Insert(Proveedor proveedor)
         {
             return _connection.Insert(proveedor); 
+        }
+
+        public int Update(Proveedor proveedor)
+        {
+            return _connection.Update(proveedor); 
         }
 
         public int Delete(Proveedor proveedor)

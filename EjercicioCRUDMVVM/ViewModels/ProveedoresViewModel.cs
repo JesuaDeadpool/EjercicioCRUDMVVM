@@ -97,8 +97,7 @@ namespace EjercicioCRUDMVVM.ViewModels
 
         }
 
-       
-
+   
 
         private void Alerta(string Titulo, string Mensaje)
 
