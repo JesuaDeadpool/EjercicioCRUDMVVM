@@ -15,4 +15,9 @@ public partial class ProveedoresView : ContentPage
 		this.BindingContext = viewModel; 
 
 	}
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+    }
 }

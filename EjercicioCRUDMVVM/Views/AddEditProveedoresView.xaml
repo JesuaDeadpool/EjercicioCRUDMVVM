@@ -3,10 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EjercicioCRUDMVVM.Views.AddEditProveedoresView"
              Title="Agregar/Actualizar Registro">
-    <VerticalStackLayout Padding="30" Spacing="10">
 
-        <Label Text="ID"/>
-        <Entry Text="" Keyboard="Numeric"/>
+    <VerticalStackLayout Padding="30" Spacing="20">
 
         <Label Text="Nombre del Proveedor"/>
         <Entry Text="" Keyboard="Text"/>
@@ -17,7 +15,7 @@
         <Label Text="Telefono"/>
         <Entry Text="" Keyboard="Numeric"/>
         
-        <Label Text="Productos"/>
+        <Label Text="Producto"/>
         <Entry Text="" Keyboard="Text"/>
 
 

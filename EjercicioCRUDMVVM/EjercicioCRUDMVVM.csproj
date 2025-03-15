@@ -35,7 +35,7 @@
 		            <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		            <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		            <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
-		            <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		            <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion><UserSecretsId>fe84a38d-0a72-431c-a008-362ac80520de</UserSecretsId>
 		      
 	</PropertyGroup>
 
@@ -64,7 +64,7 @@
 </ItemGroup>
 
 	      <ItemGroup>
-		            <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" /><PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		            <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" /><PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" /><PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		            <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		            <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" /><PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
 		      
