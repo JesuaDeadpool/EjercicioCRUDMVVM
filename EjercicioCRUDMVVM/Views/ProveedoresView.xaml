@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjercicioCRUDMVVM.Views.ProveedoresView"
+ 
+             Title="Proveedores">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+            <Image Source="undraw_preparation.png" WidthRequest="400"  HeightRequest="200" Margin="0,40,0,0"/>
+            <Grid RowDefinitions="Auto" ColumnDefinitions="40,*,*,*,*" Margin="0,40,0,0">
+                <Label Text="Id" Grid.Column="0" HorizontalTextAlignment="Center"/>
+                <Label Text="Nombre" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                <Label Text="Fabrica" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                <Label Text="Telefono" Grid.Column="3" HorizontalTextAlignment="Center"/>
+                <Label Text="Productos" Grid.Column="4" HorizontalTextAlignment="Center"/>
+            </Grid>
+
+            <Grid RowDefinitions="Auto" ColumnDefinitions="40,*,*,*,*">
+                <Label Text="0932" Grid.Column="0" HorizontalTextAlignment="Center" />
+                <Label Text="Jesua" Grid.Column="1" HorizontalTextAlignment="Center"/>
+                <Label Text="TOys" Grid.Column="2" HorizontalTextAlignment="Center"/>
+                <Label Text="88003238" Grid.Column="3" HorizontalTextAlignment="Center"/>
+                <Label Text="Plastilinas" Grid.Column="4" HorizontalTextAlignment="Center"/>
+            </Grid>
+
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*" ColumnSpacing="20">
+                <Button Text="Agregar Registro"  Grid.Column="0" Command="{Binding GoToAddEditProveedorCommand}"/>
+                <Button Text="Actualizar Registro" Grid.Column="1"/>
+            </Grid>
+
+          
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
